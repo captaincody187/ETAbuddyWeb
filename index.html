@@ -31,7 +31,7 @@
             >Home <span class="visually-hidden"></span
           ></a>
           <a class="nav-item nav-link text-light" href="#" target="_blank"
-            >Resources</a
+            >About</a
           >
         </div>
       </nav>
@@ -42,12 +42,14 @@
           <h1>Welcome To ETA Buddy!</h1>
         </div>
         <p>Please enter the milage:</p>
-        <input type="text" id="milage" />
-        <button type="button" class="btn btn-primary" onclick="calculateEta()">Get ETA</button>
+        <input aria-label="Milage" type="text" id="milage" />
+        <button type="button" class="btn btn-primary" onclick="calculateEta()">
+          Get ETA
+        </button>
+        <button class="btn btn-primary" onclick="clearEta()">Clear</button>
       </div>
       <div class="display" id="disP">
-        <h2>ETA To Next Stop:</h2>
-        <h3 id="dateTime"></h3>
+        <h1 id="dateTime"></h1>
       </div>
     </main>
     <footer>
