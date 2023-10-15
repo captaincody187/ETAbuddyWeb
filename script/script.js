@@ -1,9 +1,10 @@
 
 calculateEta = () => {
+
     // Get input from the user and divide by 55 mph
     const milage = parseFloat(document.getElementById('milage').value);
     const eta = milage / 55;
-  
+
     // Convert ETA to milliseconds (1 hour = 3600000 milliseconds)
     const intEta = Math.floor(eta * 3600000);
   
@@ -25,8 +26,14 @@ calculateEta = () => {
     { hour12: false },
     options);
   
-    document.getElementById("dateTime").innerHTML = etaString;
-    //console.log('Estimated Time of Arrival in CST:', etaString);
+    document.getElementById("dateTime").innerHTML = etaString + " CST";
+    console.log('captainCody was here');
+
+    // Alert to handle input value of 0
+    if(milage == 0){
+        alert('Please enter a valid number')
+    } 
+    
   }
 
   // Clear the display area

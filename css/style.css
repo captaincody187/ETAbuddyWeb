@@ -1,5 +1,19 @@
+body {
+    background-color: #E2FFFF;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
 .display {
-    width: 50rem;
-    height: 50rem;
+    width: 30rem;
+    height: 20rem;
     padding: .5rem;
+}
+
+.foot {
+    height: 5rem;
+    font-size: 1rem;
+}
+
+.heroPic {
+    width: 5rem;
 }
