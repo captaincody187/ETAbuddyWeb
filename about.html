@@ -8,7 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="icon" href="/img/clockTruck.png">
+    <link rel="icon" href="/img/clockTruck.png" />
     <!-- Bootstrap CSS v5.2.1 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -41,21 +41,37 @@
       </nav>
     </header>
     <main class="container-fluid">
-        <h1>Thanks for using ETA Tracker!</h1>
-        <p>
-            Quick note on the application: <br />
-            ETA's are calculated by dividing the 
-            miles from point a to b by 55mph.
-            All times are generated for the central
-            time zone by default. <br />
-            Future updates will include the ability to add 
-            a 10 hour break to the ETA, as well as the option
-            to pick a different time zone.
-        </p> 
+      <div class="pt-3">
+        <h3>Version 1.1</h3>
+        <p>beta</p>
+      </div>
+      <h2>Updates:</h2>
+      <p>
+        <ol>
+          <li>Theme changes uncluding background and buttons.</li>
+          <li>New input field.</li>
+          <li>The "Clear" button will now delete the milage in the input box.</li>
+          <li>New storage area for ETA's</li>
+          <li>Option to calculate for 10 hour breaks</li>
+        </ol>
+      </p>
+      <p>
+        Application Notes: 
         <br />
-        <p>
-            I hope you find this app usefull!
-        </p>
+        <br />
+        1. To add a 10 hour break, input the miles you would like to calculate, <br />and then press 
+           "Get ETA". Click on either the slider, or the text that <br />says "Calculate for 10 hour 
+            break". The ETA will then be displayed bellow.<br />
+            <br />
+            2. The store function is useful when trying to calculate multiple ETA's, <br />for expample:
+            If you need to know the time a driver will arrive at a fuel stop <br />and then also at a destination after. 
+             <br />
+             <br />
+        3. ETA's are calculated by dividing the miles from point a to b by<br /> 55mph.
+        All times are generated for the central time zone by default. <br />
+      </p>
+      <br />
+      <p>Thank you for using ETA Tracker</p>
     </main>
     <footer>
       <!-- place footer here -->
@@ -63,7 +79,7 @@
         class="bg-secondary fixed-bottom foot d-flex justify-content-center align-items-center"
       >
         <div class="text-light">
-          <p class="d-flex justify-content-center">Cody S &#128578;</p>
+          <p class="d-flex justify-content-center">&copy;2023 Cody S</p>
         </div>
       </div>
     </footer>
@@ -79,5 +95,6 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <script src="/script/script.js"></script>
   </body>
 </html>
